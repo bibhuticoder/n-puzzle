@@ -34,10 +34,16 @@ class Board{
   }
 
   move(pieceIndex){
-    var diff = Math.abs(pieceIndex - this.blankIndex);
-    if(diff === 1 || diff === 3){
-      this.swap(pieceIndex)
-      this.draw();
+    var diff = this.blankIndex -  pieceIndex;
+    if( Math.abs(diff) === 1 ||  Math.abs(diff) === 3){
+      this.swap(pieceIndex);
+
+      let directions = {'-1': 'left', '1': 'right', '-3': 'top', '3': 'bottom'};
+      $('.piece[index="'+pieceIndex+'"]').addClass('move-' + directions[diff]);
+      setTimeout(() => {
+        this.draw();
+      }, 1000);
+      
     }
   }
 

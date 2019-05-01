@@ -11,6 +11,9 @@ body{
 }
 
 .piece{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100px;
   height: 100px;
   margin: 1px;
@@ -21,9 +24,27 @@ body{
   line-height: 100px;
   background-color: skyblue;
   box-shadow: 1px 1px 2px grey;
+
+  transition: all 1s;
 }
 
 .piece[data='0']{
   background-color: white;
   color: white;
+}
+
+.move-left{
+  margin-left: -100px;
+}
+
+.move-right{
+  margin-right: 100px;
+}
+
+.move-up{
+  margin-top: -100px;
+}
+
+.move-bottom{
+  margin-bottom: 100px;
 }

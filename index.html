@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
   <title>N-Puzzle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <h1 id="title"></h1>
+  <div id="colors-palatte"></div>
   <input type="range" id="n" min="2" max="10" step="1" value="3">
   <div id="game"></div>
+  <br>
+  <button id="newGame">New game</button>
+
+  <script src="./util.js"></script>
+  <script src="./colors.js"></script>
+  <script src="./piece.js"></script>
+  <script src="./board.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>

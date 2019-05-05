@@ -50,7 +50,7 @@ class Piece{
     ctx.fillStyle = COLOR.PIECE_COLOR;
     ctx.fillRect(this.x + gap, this.y + gap, this.size - 2 * gap, this.size - 2 * gap);
 
-    ctx.fillStyle = COLOR.TEXT_COLOR;
+    ctx.fillStyle = 'white';
     ctx.font = FONT_SIZE + 'px Arial';
     let x = this.x + this.size/2 - ctx.measureText(this.id).width/2;
     let y = this.y + this.size/2 + FONT_SIZE/2;

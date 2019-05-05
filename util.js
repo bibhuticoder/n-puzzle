@@ -14,3 +14,22 @@ function getMousePos(element, evt) {
   var rect = element.getBoundingClientRect();
   return { x: evt.clientX - rect.left, y: evt.clientY - rect.top };
 }
+
+function nepali(n){
+  n = n + '';
+  var nepaliDigits = {
+    '0': '०',
+    '1': '१',
+    '2': '२',
+    '3': '३',
+    '4': '४',
+    '5': '५',
+    '6': '६',
+    '7': '७',
+    '8': '८',
+    '9': '९'
+  };
+  let result = '';
+  n.split('').forEach(n => result += nepaliDigits[n]);
+  return result;
+}

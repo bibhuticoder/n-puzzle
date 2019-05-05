@@ -54,6 +54,6 @@ class Piece{
     ctx.font = FONT_SIZE + 'px Arial';
     let x = this.x + this.size/2 - ctx.measureText(this.id).width/2;
     let y = this.y + this.size/2 + FONT_SIZE/2;
-    ctx.fillText(this.id, x, y);
+    ctx.fillText(nepali(this.id), x, y);
   }
 }
